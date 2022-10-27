@@ -1,6 +1,6 @@
 ---
 PromptInfo:
- id: nhaouari-getTitles
+ promptId: nhaouari-getTitles
  name: 🗃️ Get Blog Titles
  description: Select a content, list of blog titles will be generated.
  author: Noureddine

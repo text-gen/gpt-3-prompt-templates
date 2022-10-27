@@ -1,6 +1,6 @@
 ---
 PromptInfo:
- id: nhaouari-getOutline
+ promptId: nhaouari-getOutline
  name: 🗒️Generate Outline
  description: Select a title, an outline will be generated for You.
  author: Noureddine

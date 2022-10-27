@@ -1,21 +1,21 @@
 [
 {
-    "id":"nhaouari-getTitle",
+    "promptId":"nhaouari-getTitle",
     "name":"🗃️ Get Blog Titles",
     "description":"Select a content, list of blog titles will be generated.",
     "required_values":"context",
     "author": "Noureddine",
     "tags": "writing",
-    "version": "0.0.1"
+    "version": "0.0.2"
 },
 {
-    "id":"nhaouari-getOutline",
+    "promptId":"nhaouari-getOutline",
     "name":"🗒️Generate Outline",
     "description":"Select a title, an outline will be generated for You.",
     "required_values":"title",
     "author": "Noureddine",
     "tags": "writing",
-    "version": "0.0.1"
+    "version": "0.0.2"
 }
 
 ]

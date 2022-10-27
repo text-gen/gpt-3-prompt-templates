@@ -1,9 +1,10 @@
 {
-    "id": "default",
+    "packageId": "default",
     "name": "Default Prompts Package",
-    "version": "0.0.1",
+    "version": "0.0.3",
 	"minTextGeneratorVersion": "0.1.0",
 	"description": "This is the main package that comes with Text Generator plugin in Obsidian",
     "author": "Noureddine Haouari",
+    "tags" : "writing, brainstorming",
 	"authorUrl": "https://www.buymeacoffee.com/haouarine"
 }
