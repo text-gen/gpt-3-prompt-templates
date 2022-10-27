@@ -1,7 +1,7 @@
 {
     "packageId": "default",
     "name": "Default Prompts Package",
-    "version": "0.0.4",
+    "version": "0.0.5",
 	"minTextGeneratorVersion": "0.1.0",
 	"description": "This is the main package that comes with Text Generator plugin in Obsidian",
     "author": "Noureddine Haouari",
