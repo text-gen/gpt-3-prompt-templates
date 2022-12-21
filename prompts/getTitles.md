@@ -10,5 +10,5 @@ PromptInfo:
 content: 
 {{context}}
 prompt:
-suggest 10 attactive blog titles about this content:
+suggest 10 attractive blog titles about this content:
 
