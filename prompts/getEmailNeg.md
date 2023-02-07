@@ -2,13 +2,13 @@
 PromptInfo:
  promptId: getEmailNeg
  name: ✉️ Reply to Email negatively 😡
- description: select the email content and negatif reply will be generated
+ description: select the email content and negative reply will be generated
  author: Noureddine
  tags: communication, email
  version: 0.0.1
 ---
 prompt:
-reply to this email negativly in professional way. 
+reply to this email negatively in professional way. 
 email: 
 {{context}}
 reply: 
