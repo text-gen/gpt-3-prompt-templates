@@ -8,7 +8,7 @@ PromptInfo:
  version: 0.0.1
 ---
 prompt:
-reply to this email negatively in professional way. 
+Reply to this email negatively in a professional way. 
 email: 
 {{context}}
 reply: 
