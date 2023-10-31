@@ -1,14 +1,14 @@
 {
-"prompts":[
-"getEmailNeg",
-"getEmailPos",
-"getIdeas",
-"getOutline",
-"getParagraph",
-"getTags",
-"getTitles",
-"rewrite",
-"simplify",
-"summarize"
-]
+"prompts": [
+ "getEmailNeg",
+ "getEmailPos",
+ "getIdeas",
+ "getOutline",
+ "getParagraph",
+ "getTags",
+ "getTitles",
+ "rewrite",
+ "simplify",
+ "summarize",
+  ]
 }
