@@ -10,9 +10,10 @@ on:
 
 jobs:
   build:
+    permissions: write-all
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - name: Extract version from commit message
         id: ver
         run: |
@@ -24,6 +25,29 @@ jobs:
             echo "exit no version x.x.x in the commit message"
             exit 1
           fi
+      # Remove existing data.json file
+      - name: Remove data.json
+        run: rm -f data.json
+
+      # Get a list of all the files in the prompts folder
+      - name: Get list of prompts
+        run: ls prompts > prompts.txt
+
+      # Remove the file extension from each file name
+      - name: Remove file extensions
+        run: sed -i 's/\..*$//' prompts.txt
+
+      - name: Create data.json
+        run: |
+          # Add double quotes around each line
+          sed -i 's/^/"/' prompts.txt
+          sed -i 's/$/"/' prompts.txt
+          
+          # Add comma at the end of each line except the last one
+          sed -i '$!s/$/,/' prompts.txt
+          # Create the JSON file
+          echo "{\"prompts\": [$(cat prompts.txt)]}" > data.json
+        
       - name: Create Release
         id: create_release
         uses: actions/create-release@v1
