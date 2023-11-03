@@ -75,4 +75,14 @@ jobs:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
           asset_path: manifest.json
           asset_name: manifest.json
+<<<<<<< HEAD
           asset_content_type: application/json
+=======
+          asset_content_type: application/json
+          
+      - name: push data.json
+        run: |
+          git config user.name ${{ github.actor }}
+          git config user.email ${{ github.actor }}
+          git diff --exit-code || git commit -am "Updated data.json" && git push
+>>>>>>> 2043376293564cf6504f225c87c74f57e9888aab
